@@ -1,18 +1,4 @@
-
-<h3 align="center"><a href="https://arxiv.org/pdf/2501.13106" style="color:#9C276A">
 VideoSportsCom: Video-SportsCom: A Large-Scale Sports Commentary Dataset for Artistic, Technical, and Tactical Sports Video Understanding
-<h5 align="center"> If our project helps you, please give us a star ⭐ on GitHub to support us. 🙏🙏 </h2>
-
-
-<h5 align="center">
-
-</p></details>
-
-
-## 📰 News
-
-
-
 ## Introduction
 VideoSportsCom is large-scale, multi-category, multi-attribute, and multi-sport dataset for artistic, technical, and tactical sports video understanding.
 
