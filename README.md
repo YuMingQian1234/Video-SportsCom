@@ -66,8 +66,8 @@ conversation = [
     {
         "role": "user",
         "content": [
-            {"type": "video", "video": {"video_path": "./assets/cat_and_chicken.mp4", "fps": 1, "max_frames": 180}},
-            {"type": "text", "text": "What is the cat doing?"},
+            {"type": "video", "video": {"video_path": "./assets/cat_and_chicken.mp4", "fps": 15, "max_frames": 300}},
+            {"type": "text", "text": "You are a professional commentator. Provide color commentary with a positive stance and a non-passionate style on the given video."},
         ]
     },
 ]
@@ -108,29 +108,15 @@ The annotation files are consist of a list of dictionaries, where each item foll
 ```json
 [
     {
-        "image": ["images/xxx.jpg"],
-        "conversations": [
-            {
-                "from": "human",
-                "value": "<image>\nWhat are the colors of the bus in the image?"
-            },
-            {
-                "from": "gpt",
-                "value": "The bus in the image is white and red."
-            },
-            ...
-        ]
-    },
-    {
         "video": ["videos/xxx.mp4"],
         "conversations": [
             {
                 "from": "human",
-                "value": "<video>\nWhat are the main activities that take place in the video?"
+                "value": "<video>\nYou are a professional commentator. Provide color commentary with a positive stance and a non-passionate style on the given video."
             },
             {
                 "from": "gpt",
-                "value": "The main activities that take place in the video are the preparation of camera equipment by a man, a group of men riding a helicopter, and a man sailing a boat through the water."
+                "value": "Yes and I think the direct comparison as well when you see everyone do their clubs and then everyone do their hoop and ribbon and so on also gives the judges a better perspective because in qualification you're alternating apparatus between two subgroups."
             },
             ...
         ]
@@ -144,7 +130,7 @@ We provide some templates in `scripts/train` for all stages. You can modify the 
 ```bash
   --data_folder ./datasets \
   --data_path ./datasets/Video-SportsCom_Train.jsonl ./datasets/Video-SportsCom_Train_Masked.jsonl \
-  --model_path Qwen/Qwen2.5-1.5B-Instruct \
+  --model_path DAMO-NLP-SG/VideoLLaMA3-7B \
   --vision_encoder DAMO-NLP-SG/SigLIP-NaViT \
 ```
 For finetuneing, `--model_path` is the path to the converted checkpoint as described in step 2.
@@ -166,7 +152,7 @@ You can adjust the above hyperparameters according to the available GPU memory a
 
 ## Citation
 
-If you find VideoLLaMA useful for your research and applications, please cite using this BibTeX:
+If you find Video-Sports useful for your research and applications, please cite using this BibTeX:
 
 ```bibtex
 @article{damonlpsg2025videollama3,
@@ -195,7 +181,7 @@ If you find VideoLLaMA useful for your research and applications, please cite us
 ```
 
 ## Acknowledgement
-Our VideoLLaMA3 is built on top of [**SigLip**](https://huggingface.co/google/siglip-so400m-patch14-384) and [**Qwen2.5**](https://github.com/QwenLM/Qwen2.5). We also learned a lot from the implementation of [**LLaVA-OneVision**](https://github.com/LLaVA-VL/LLaVA-NeXT), [**InternVL2**](https://internvl.github.io/blog/2024-07-02-InternVL-2.0/), and [**Qwen2VL**](https://github.com/QwenLM/Qwen2-VL). Besides, our VideoLLaMA3 benefits from tons of open-source efforts. We sincerely appreciate these efforts and compile a list in [ACKNOWLEDGEMENT.md](https://github.com/DAMO-NLP-SG/VideoLLaMA3/blob/main/ACKNOWLEDGEMENT.md) to express our gratitude. If your work is used in VideoLLaMA3 but not mentioned in either this repo or the technical report, feel free to let us know :heart:.
+Our Video-SportsCom is built on top of [**SigLip**](https://huggingface.co/google/siglip-so400m-patch14-384) and [**Qwen2.5**](https://github.com/QwenLM/Qwen2.5). We also learned a lot from the implementation of [**LLaVA-OneVision**](https://github.com/LLaVA-VL/LLaVA-NeXT), [**InternVL2**](https://internvl.github.io/blog/2024-07-02-InternVL-2.0/), and [**Qwen2VL**](https://github.com/QwenLM/Qwen2-VL). Besides, our VideoLLaMA3 benefits from tons of open-source efforts. We sincerely appreciate these efforts and compile a list in [ACKNOWLEDGEMENT.md](https://github.com/DAMO-NLP-SG/VideoLLaMA3/blob/main/ACKNOWLEDGEMENT.md) to express our gratitude. If your work is used in VideoLLaMA3 but not mentioned in either this repo or the technical report, feel free to let us know :heart:.
 
 
 ## License
