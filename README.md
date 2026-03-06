@@ -23,26 +23,6 @@ VideoLLaMA 3: Frontier Multimodal Foundation Models for Video Understanding</a><
 <details open><summary>💡 Some other multimodal-LLM projects from our team may interest you ✨. </summary><p>
 <!--  may -->
 
-> [**VideoLLaMA 2: Advancing Spatial-Temporal Modeling and Audio Understanding in Video-LLMs**](https://github.com/DAMO-NLP-SG/VideoLLaMA2) <br>
-> Zesen Cheng*, Sicong Leng*, Hang Zhang*, Yifei Xin*, Xin Li*, Guanzheng Chen, Yongxin Zhu, Wenqi Zhang, Ziyang Luo, Deli Zhao, Lidong Bing <br>
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/DAMO-NLP-SG/VideoLLaMA2)  [![github](https://img.shields.io/github/stars/DAMO-NLP-SG/VideoLLaMA2.svg?style=social)](https://github.com/DAMO-NLP-SG/VideoLLaMA2) [![arXiv](https://img.shields.io/badge/Arxiv-2406.07476-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2406.07476) <be> 
-
-> [**VideoRefer Suite: Advancing Spatial-Temporal Object Understanding with Video LLM**](https://arxiv.org/abs/2501.00599) <br>
-> Yuqian Yuan, Hang Zhang, Wentong Li, Zesen Cheng, Boqiang Zhang, Long Li, Xin Li, Deli Zhao, Wenqiao Zhang, Yueting Zhuang, Jianke Zhu, Lidong Bing <br>
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/DAMO-NLP-SG/VideoRefer)  [![github](https://img.shields.io/github/stars/DAMO-NLP-SG/VideoRefer.svg?style=social)](https://github.com/DAMO-NLP-SG/VideoRefer)  [![arXiv](https://img.shields.io/badge/Arxiv-2501.00599-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2501.00599) <br>
-
-> [**VCD: Mitigating Object Hallucinations in Large Vision-Language Models through Visual Contrastive Decoding**](https://arxiv.org/abs/2311.16922) <br>
-> Sicong Leng*, Hang Zhang*, Guanzheng Chen, Xin Li, Shijian Lu, Chunyan Miao, Lidong Bing <br>
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/DAMO-NLP-SG/VCD)  [![github](https://img.shields.io/github/stars/DAMO-NLP-SG/VCD.svg?style=social)](https://github.com/DAMO-NLP-SG/VCD)  [![arXiv](https://img.shields.io/badge/Arxiv-2311.16922-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2311.16922) <br>
-
-> [**The Curse of Multi-Modalities: Evaluating Hallucinations of Large Multimodal Models across Language, Visual, and Audio**](https://arxiv.org/abs/2410.12787) <br>
-> Sicong Leng*, Yun Xing*, Zesen Cheng*, Yang Zhou, Hang Zhang, Xin Li, Deli Zhao, Shijian Lu, Chunyan Miao, Lidong Bing <br>
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/DAMO-NLP-SG/CMM)  [![github](https://img.shields.io/github/stars/DAMO-NLP-SG/CMM.svg?style=social)](https://github.com/DAMO-NLP-SG/CMM)  [![arXiv](https://img.shields.io/badge/Arxiv-2410.12787-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.12787) <br>
-
-> [**Breaking the Memory Barrier: Near Infinite Batch Size Scaling for Contrastive Loss**](https://arxiv.org/abs/2410.17243) <br>
-> Zesen Cheng*, Hang Zhang*, Kehan Li*, Sicong Leng, Zhiqiang Hu, Fei Wu, Deli Zhao, Xin Li, Lidong Bing <br>
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/DAMO-NLP-SG/Inf-CLIP)  [![github](https://img.shields.io/github/stars/DAMO-NLP-SG/Inf-CLIP.svg?style=social)](https://github.com/DAMO-NLP-SG/Inf-CLIP)  [![arXiv](https://img.shields.io/badge/Arxiv-2410.17243-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.17243) <br>
-
 
 
 
@@ -51,11 +31,7 @@ VideoLLaMA 3: Frontier Multimodal Foundation Models for Video Understanding</a><
 
 ## 📰 News
 
-* **[2025.02.07]**  🔥🔥 Release our re-captioned high-quality image-text dataset [VL3-Syn7M](https://huggingface.co/datasets/DAMO-NLP-SG/VL3-Syn7M).
-* **[2025.01.26]**  🔥🔥 As of Jan 26, VideoLLaMA3-7B is the best 7B-sized model on [LVBench](https://huggingface.co/spaces/THUDM/LVBench) leaderboard.
-* **[2025.01.24]**  🔥🔥 As of Jan 24, VideoLLaMA3-7B is the best 7B-sized model on [VideoMME](https://video-mme.github.io/home_page.html) leaderboard.
-* **[2025.01.22]**  👋👋 Release technical report of VideoLLaMA 3. If you have works closely related to VideoLLaMA 3 but not mentioned in the paper, feel free to let us know.
-* **[2025.01.21]**  Release models and inference code of VideoLLaMA 3.
+
 
 ## 🌟 Introduction
 VideoLLaMA 3 is a series of multimodal foundation models with frontier image and video understanding capacity.
@@ -114,20 +90,6 @@ pip install -r requirements.txt
 pip install flash-attn --no-build-isolation
 ```
 
-## :earth_americas: Model Zoo
-
-| Model                | Base Model   | HF Link                                                      |
-| -------------------- | ------------ | ------------------------------------------------------------ |
-| VideoLLaMA3-7B       | Qwen2.5-7B   | [DAMO-NLP-SG/VideoLLaMA3-7B](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA3-7B) |
-| VideoLLaMA3-2B       | Qwen2.5-1.5B | [DAMO-NLP-SG/VideoLLaMA3-2B](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA3-2B) |
-| VideoLLaMA3-7B-Image | Qwen2.5-7B   | [DAMO-NLP-SG/VideoLLaMA3-7B-Image](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA3-7B-Image) |
-| VideoLLaMA3-2B-Image | Qwen2.5-1.5B | [DAMO-NLP-SG/VideoLLaMA3-2B-Image](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA3-2B-Image) |
-
-We also upload the tuned vision encoder of VideoLLaMA3-7B for wider application:
-
-| Model                         | Base Model                | HF Link                                                      |
-| ----------------------------- | ------------------------- | ------------------------------------------------------------ |
-| VideoLLaMA3-7B Vision Encoder | siglip-so400m-patch14-384 | [DAMO-NLP-SG/VL3-SigLIP-NaViT](https://huggingface.co/DAMO-NLP-SG/VL3-SigLIP-NaViT) |
 
 ## 🤖 Inference
 
@@ -172,16 +134,6 @@ print(response)
 ```
 
 For more cases, please refer to [examples](https://github.com/DAMO-NLP-SG/VideoLLaMA3/blob/main/inference/example_videollama3.py).
-
-### CookBook
-Checkout [inference notebooks](inference/notebooks/) that demonstrate how to use VideoLLaMA3 on various applications such as single-image understanding, multi-image understanding, visual referring and grounding, video understanding, etc.
-
-| Notebooks                | Description   |
-| :-------------------- | ------------------------------------------------------------------------ |
-| [Image Understanding](https://github.com/DAMO-NLP-SG/VideoLLaMA3/blob/main/inference/notebooks/01_single_image_understanding.ipynb)      | Demonstrations of using VideoLLaMA 3 for **general image understanding**, **chart analysis**, **table understanding**, **document recognition**, and **visual code analysis**|
-| [Multi-image Understanding](https://github.com/DAMO-NLP-SG/VideoLLaMA3/blob/main/inference/notebooks/02_multi_image_understanding.ipynb)       | Demonstrations of using VideoLLaMA 3 for **multi-image comparison and understanding** |
-| [Fine-grained Image Recognition & Understanding](https://github.com/DAMO-NLP-SG/VideoLLaMA3/blob/main/inference/notebooks/03_visual_referring_and_grounding.ipynb) | Demonstrations of using VideoLLaMA 3 for **visual referring & grounding** |
-| [Video Understanding](https://github.com/DAMO-NLP-SG/VideoLLaMA3/blob/main/inference/notebooks/04_video_understanding.ipynb) | Demonstrations of using VideoLLaMA 3 for **general video understanding**, **long video understanding** and **temporal grounding** |
 
 
 ## 🤗 Demo
