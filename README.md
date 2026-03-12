@@ -13,6 +13,8 @@ Basic Dependencies:
 * transformers >= 4.46.3
 
 Install required packages:
+## Dateset
+You can get our Video-SportsCom at https://huggingface.co/datasets/Yumq123/Video-SportsCom
 
 **[Inference-only]**
 
