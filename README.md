@@ -45,7 +45,7 @@ pip install flash-attn --no-build-isolation
 ## Dateset
 You can get our Video-SportsCom at https://huggingface.co/datasets/Yumq123/Video-SportsCom
 
-## 🤖 Inference
+## Inference
 
 ```python
 import torch
