@@ -153,7 +153,7 @@ You can adjust the above hyperparameters according to the available GPU memory a
 
 ## Citation
 
-If you find Video-Sports useful for your research and applications, please cite using this BibTeX:
+If you find Video-SportsCom useful for your research and applications, please cite using this BibTeX:
 
 ```bibtex
 @article{damonlpsg2025videollama3,
