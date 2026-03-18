@@ -1,6 +1,6 @@
-VideoSportsCom: Video-SportsCom: A Large-Scale Sports Commentary Dataset for Artistic, Technical, and Tactical Sports Video Understanding
+SportsCom: A Large-Scale Sports Commentary Dataset for Artistic, Technical, and Tactical Sports Video Understanding
 ## Introduction
-VideoSportsCom is large-scale, multi-category, multi-attribute, and multi-sport dataset for artistic, technical, and tactical sports video understanding.
+SportsCom is large-scale, multi-category, multi-attribute, and multi-sport dataset for artistic, technical, and tactical sports video understanding.
 
 
 ## Requirements and Installation
@@ -37,13 +37,13 @@ pip install decord ffmpeg-python imageio opencv-python
 **[Training]**
 
 ```bash
-git clone https://github.com/YuMingQian1234/Video-SportsCom
+git clone https://github.com/YuMingQian1234/SportsCom
 cd Video-SportsCom
 pip install -r requirements.txt
 pip install flash-attn --no-build-isolation
 ```
 ## Dateset
-You can get our Video-SportsCom at https://huggingface.co/datasets/Yumq123/Video-SportsCom
+You can get our Video-SportsCom at https://huggingface.co/datasets/Yumq123/SportsCom
 
 ## Inference
 
@@ -101,8 +101,8 @@ data_root
 │   ├── video_1.mp4
 │   └── ...
 │   └── ...
-├── Video-SportsCom_Train.jsonl
-├── Video-SportsCom_Train_Masked.jsonl
+├── SportsCom_Train.jsonl
+├── SportsCom_Train_Masked.jsonl
 └── ...
 ```
 The annotation files are consist of a list of dictionaries, where each item follows the following format:
@@ -130,7 +130,7 @@ For loading and memory efficiency, we recommend to use `.jsonl` files with [hugg
 We provide some templates in `scripts/train` for all stages. You can modify the variables to fit your settings of data and models based on them. For example:
 ```bash
   --data_folder ./datasets \
-  --data_path ./datasets/Video-SportsCom_Train.jsonl ./datasets/Video-SportsCom_Train_Masked.jsonl \
+  --data_path ./datasets/SportsCom_Train.jsonl ./datasets/SportsCom_Train_Masked.jsonl \
   --model_path DAMO-NLP-SG/VideoLLaMA3-7B \
   --vision_encoder DAMO-NLP-SG/SigLIP-NaViT \
 ```
@@ -182,7 +182,7 @@ If you find Video-SportsCom useful for your research and applications, please ci
 ```
 
 ## Acknowledgement
-Our Video-SportsCom is built on top of [**SigLip**](https://huggingface.co/google/siglip-so400m-patch14-384) and [**Qwen2.5**](https://github.com/QwenLM/Qwen2.5). We also learned a lot from the implementation of [**LLaVA-OneVision**](https://github.com/LLaVA-VL/LLaVA-NeXT), [**InternVL2**](https://internvl.github.io/blog/2024-07-02-InternVL-2.0/), and [**Qwen2VL**](https://github.com/QwenLM/Qwen2-VL). Besides, our VideoLLaMA3 benefits from tons of open-source efforts. We sincerely appreciate these efforts and compile a list in [ACKNOWLEDGEMENT.md](https://github.com/DAMO-NLP-SG/VideoLLaMA3/blob/main/ACKNOWLEDGEMENT.md) to express our gratitude. If your work is used in VideoLLaMA3 but not mentioned in either this repo or the technical report, feel free to let us know :heart:.
+Our SportsCom is built on top of [**SigLip**](https://huggingface.co/google/siglip-so400m-patch14-384) and [**Qwen2.5**](https://github.com/QwenLM/Qwen2.5). We also learned a lot from the implementation of [**LLaVA-OneVision**](https://github.com/LLaVA-VL/LLaVA-NeXT), [**InternVL2**](https://internvl.github.io/blog/2024-07-02-InternVL-2.0/), and [**Qwen2VL**](https://github.com/QwenLM/Qwen2-VL). Besides, our VideoLLaMA3 benefits from tons of open-source efforts. We sincerely appreciate these efforts and compile a list in [ACKNOWLEDGEMENT.md](https://github.com/DAMO-NLP-SG/VideoLLaMA3/blob/main/ACKNOWLEDGEMENT.md) to express our gratitude. If your work is used in VideoLLaMA3 but not mentioned in either this repo or the technical report, feel free to let us know :heart:.
 
 
 ## License
