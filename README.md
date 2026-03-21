@@ -33,12 +33,13 @@ pip install decord ffmpeg-python imageio opencv-python
 ```
 > ⚠ **Note:** For CUDA 11.8 with `torch==2.4.0` and `torchvision==0.19.0`, use `flash-attn==2.7.3`.  
 > If you are using a different Python or CUDA version, please check the [flash-attn releases](https://github.com/Dao-AILab/flash-attention/releases/) to select the compatible wheel. Using incompatible versions may break the setup.
-
+## Dataset 
+Our SportsCom dataset is at https://huggingface.co/datasets/Yumq123/SportsCom
 **[Training]**
 
 ```bash
 git clone https://github.com/YuMingQian1234/SportsCom
-cd Video-SportsCom
+cd SportsCom
 pip install -r requirements.txt
 pip install flash-attn --no-build-isolation
 ```
