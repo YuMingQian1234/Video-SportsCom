@@ -42,8 +42,6 @@ cd Video-SportsCom
 pip install -r requirements.txt
 pip install flash-attn --no-build-isolation
 ```
-## Dateset
-You can get our SportsCom at https://huggingface.co/datasets/Yumq123/SportsCom
 
 ## Inference
 
