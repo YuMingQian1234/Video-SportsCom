@@ -1,4 +1,4 @@
-## SportsCom: A Large-Scale Sports Commentary Dataset for Artistic, Technical, and Tactical Sports Video Understanding
+## SportsCom: A Large-Scale, Multi-Sport, Multi-Category and Multi-Attribute Sports Commentary Dataset for MLLM Video Understanding
 ## Introduction
 SportsCom is large-scale, multi-category, multi-attribute, and multi-sport dataset for artistic, technical, and tactical sports video understanding.
 
